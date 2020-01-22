@@ -5,7 +5,7 @@
     create or replace
     stage my_s3_stage
     url='s3://dbt-snowflake/training/Sales.csv'
-    {# credentials=#}
+    {# credentials= #}
     file_format=(type='CSV');
 
   {% endset %}
