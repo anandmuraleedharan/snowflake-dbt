@@ -26,18 +26,20 @@
     b. Remember to set Path variable during Python installation
     c. pip install dbt
     d. dbt init <project>
-    e. configure snowflake in profile.yml
-    f. configure project in dbt_project.yml
+    e. Configure snowflake in profile.yml
+    f. Configure project in dbt_project.yml
     e. dbt seed --show
 2. Exercise 2
     a. Set Up AWS S3 and load a file
     b. Set up aws secret key access
     c. Write a DBT macro to set up an external stage from AWS to SF
     d. dbt run-operation <macro>
-    e. write a DBT model to create a table querying the created SF stage.
+    e. Write a DBT model to create a table querying the created SF stage.
 3. Exercise 3
     a. Load a file to SF using dbt seed --show
-    b. set up a variable in dbt_project.yml
-    c. use the variable in model and write a query materializing the result as a table/view
+    b. Set up a variable in dbt_project.yml
+    c. Use the variable in model and write a query materializing the result as a table/view
 4. Exercise 4
-    <Watch this space>
+    a. Create a price change marker file and load it to SF by seeding
+    b. Write a dbt macro to generate date time table in snowflake and execute it through run-operation
+    c. Write a model in dbt that uses joins to convert price change table to monthly price table
