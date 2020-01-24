@@ -3,9 +3,9 @@
   {% set query %}
 
     create or replace
-    stage my_s3_stage
+    stage aws_sales_stage
     url='s3://dbt-snowflake/training/Sales.csv'
-    {# credentials= #}
+    {# credentials=() #}
     file_format=(type='CSV');
 
   {% endset %}

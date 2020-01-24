@@ -12,6 +12,7 @@
 4. Create a database 'raw' and use it for source tables.
 5. Create a database 'analytics' and use it for transformed models.
 6. Role 'loader' uses the 'raw' db and the role 'transformer' uses the 'analytics' db.
+7. Always run Microsoft powershell in admin mode.
 
 ### Exercises
 1. Load file from /data using dbt --seed command and create a view on top of the loaded file;

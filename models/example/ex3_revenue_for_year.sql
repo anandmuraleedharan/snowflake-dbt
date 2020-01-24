@@ -3,7 +3,7 @@
 with source_data as (
 
   select *
-  from revperyear
+  from raw.public.revperyear
   where year = '{{ var("year") }}'
 
 )

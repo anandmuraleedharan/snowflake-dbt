@@ -4,7 +4,7 @@
 with source_data as (
 
     select *
-    from countries
+    from raw.public.countries
     where country like 'A%'
 
 )

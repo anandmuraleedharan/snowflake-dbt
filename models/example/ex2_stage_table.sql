@@ -26,7 +26,7 @@ with source_data as (
     t.$21 as ShippingCost,
     t.$22 as OrderPriority
 
-    from @my_s3_stage/ t
+    from @aws_sales_stage/ t
 
 )
 
