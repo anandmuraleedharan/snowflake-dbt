@@ -32,6 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   vars:
     year: "2003"
+    prod: "Camry"
   snowConnect:
       # Applies to all files under models/example/
       example:

@@ -1,3 +1,5 @@
+{# Macro to create a stage in the target db from AWS S3 #}
+
 {% macro aws_stage() %}
 
   {% set query %}

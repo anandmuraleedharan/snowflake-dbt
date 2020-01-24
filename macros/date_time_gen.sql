@@ -1,3 +1,5 @@
+{# Macro to generate DATE TIME DIMENSION standard table #}
+
 {% macro date_time_gen() %}
 
   {% set query %}
