@@ -17,7 +17,7 @@
     )
 
     SELECT MY_DATE,
-           MONTH(MY_DATE) || '/' || YEAR(MY_DATE) AS MONTH_YEAR
+           substr(MY_DATE,-18,2) || '/' || YEAR(MY_DATE) AS MONTH_YEAR
     FROM MY_DATES
 
   {% endset %}
