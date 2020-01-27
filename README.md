@@ -42,4 +42,4 @@
 4. Exercise 4
     a. Create a price change marker file and load it to SF by seeding
     b. Write a dbt macro to generate date time table in snowflake and execute it through run-operation
-    c. Write a model in dbt that uses joins to convert price change table to monthly price table
+    c. Write a model in dbt that uses joins to convert price change table to monthly price table.
