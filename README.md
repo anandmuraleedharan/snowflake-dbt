@@ -5,8 +5,12 @@
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
+###Project
+1. Project migrated from Snowflake trial to VBI Snowflake after Exercise 3.
+2. After the directions below - roles + databases cannot be met because of access restrictions in VBI snowflake instance.
+
 ### Directions
-1. Always remember to remove credential details before pushing projects to git
+1. Always remember to remove credential details before pushing projects to git.
 2. Create a role 'loader' in snowflake and use it in dbt to load files.
 3. Create a role 'transformer' in snowflake and use it in dbt to transform models.
 4. Create a database 'raw' and use it for source tables.
@@ -15,10 +19,10 @@
 7. Always run Microsoft powershell in admin mode.
 
 ### Exercises
-1. Load file from /data using dbt --seed command and create a view on top of the loaded file;
-2. Load a file to AWS S3 and replicate the file as a table in Snowflake using DBT macro;
-3. Use variable in DBT to filter a raw table in snowflake and materialize it as a table
-4. Load a Price Change table to snowflake and transform to a Monthly Price table;
+1. Load file from /data using dbt --seed command and create a view on top of the loaded file.
+2. Load a file to AWS S3 and replicate the file as a table in Snowflake using DBT macro.
+3. Use variable in DBT to filter a raw table in snowflake and materialize it as a table.
+4. Load a Price Change table to snowflake and transform to a Monthly Price table.
 
 ### Tips
 1. Exercise 1
@@ -39,7 +43,8 @@
     a. Load a file to SF using dbt seed --show
     b. Set up a variable in dbt_project.yml
     c. Use the variable in model and write a query materializing the result as a table/view
-4. Exercise 4
+4. Exercise 4 
     a. Create a price change marker file and load it to SF by seeding
     b. Write a dbt macro to generate date time table in snowflake and execute it through run-operation
     c. Write a model in dbt that uses joins to convert price change table to monthly price table.
+    d. 2 methods are possible: Window functions or Self-joins with subqueries.
