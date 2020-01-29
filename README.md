@@ -43,8 +43,9 @@
     a. Load a file to SF using dbt seed --show
     b. Set up a variable in dbt_project.yml
     c. Use the variable in model and write a query materializing the result as a table/view
-4. Exercise 4 
+4. Exercise 4
     a. Create a price change marker file and load it to SF by seeding
     b. Write a dbt macro to generate date time table in snowflake and execute it through run-operation
     c. Write a model in dbt that uses joins to convert price change table to monthly price table.
-    d. 2 methods are possible: Window functions or Self-joins with subqueries.
+    d. 2 methods are possible: Window functions or Self-joins with subqueries theoretically.
+    e. You might also want to research on CTEs, Macros, Variables, and Case statements. 
